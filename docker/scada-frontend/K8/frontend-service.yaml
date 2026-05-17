@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: scada-frontend-service
+  namespace: scada
+  labels:
+    app: scada-frontend
+spec:
+  type: ClusterIP
+  selector:
+    app: scada-frontend
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
