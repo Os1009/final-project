@@ -6,3 +6,7 @@
 crash.log
 crash.*.log
 *.tfplan
+
+# Terraform sensitive/local files
+terraform.tfstate
+*.tfvars
